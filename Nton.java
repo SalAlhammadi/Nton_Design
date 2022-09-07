@@ -1,4 +1,8 @@
+
 public class Nton {
+    
+    private final int N = 2; //Here you can determine how many objects can be created out of this class.
+
 
     private static int count_obj= 0; 
     private String val1;
@@ -7,7 +11,7 @@ public class Nton {
 
 
     public Nton (String val1, String val2) throws Exception{
-        if (count_obj >= 2) //Here you can determine how many objects can be created out of this class.
+        if (count_obj >= N) 
             throw new Exception("Can't create more objects than " + count_obj);
         else {
             count_obj++;
